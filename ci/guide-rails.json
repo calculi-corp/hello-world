@@ -30,9 +30,9 @@
 				"segment_type": "build",
 				"job_steps": [
 					{
-						"name": "Print Env",
-						"definition": "Print Environment",
-						"command": "printenv | sort",
+						"name": "build",
+						"definition": "build",
+						"command": "mvn surefire-report:report \ncat ./target/surefire-reports/TEST-com.javacodegeeks.example.HelloWorldApplicationTests.xml \ncp ./target/surefire-reports/TEST-com.javacodegeeks.example.HelloWorldApplicationTests.xml ./test.xml\nmvn cobertura:cobertura  -Dcobertura.report.format=xml  -Dcobertura.aggregate=true install -e",
 						"properties": null
 					}
 				],
@@ -87,7 +87,7 @@
 						"dependencies": [],
 						"downloads": [],
 						"files": [
-							"((application.name))*"
+							"target/HelloWorld*"
 						],
 						"package_install_command": "",
 						"installed_path": ""
