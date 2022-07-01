@@ -48,10 +48,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>
-				org.springframework.boot
+				org.springframework
 			</groupId>
 			<artifactId>
-				spring-boot-starter-web
+				spring-beans
 			</artifactId>
 		</dependency>
 		<dependency>
