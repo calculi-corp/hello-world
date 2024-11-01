@@ -24,6 +24,7 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
+          env
   build-2:
     steps:
       - name: Say hello - job build-2
