@@ -24,12 +24,6 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
-          env
-  build-2:
-    steps:
-      - name: Say hello - job build-2
-        uses: docker://golang:1.20.3-alpine3.17
-        shell: sh
-        run: |
-          echo "hello world - build 2"  
+          echo "key1: ${{ inputs.key1 }}"
+          echo "key2: ${{ inputs.key2 }}"
 
