@@ -21,47 +21,9 @@ on:
         options:
           - "@Login"
           - "@MarketplaceTest"
-          - "@SecurityCenterTest"
-          - "@SlaConfig"
-          - "@SummaryWidget"
-          - "@AllScanners"
-          - "@WorkflowTest"
-          - "@ActionTest"
-          - "@EnvironmentTest"
-          - "@PropertyTest"
-          - "@NotificationTest"
-          - "@FM"
-          - "@IntegrationTest"
-          - "@OrganizationTest"
-          - "@TestInsights"
-          - "@JenkinsManagementTest"
-          - "@UserManagementTest"
-          - "@Bitbucket"
-          - "@Cleanup"
-          - '@UserInviteTest'
-          - "@VSMDashboard"
-          - "@CoreRegression"
         default: "@Login"
         required: true
         description: Choose test tags to run tests related to that feature
-      Browser:
-        type: choice
-        options:
-          - chrome
-          - firefox
-          - safari
-        default: chrome
-        required: true
-        description: Choose which browser you want to run the tests
-      Environment:
-        type: choice
-        options:
-          - PROD
-          - QA
-          - PREPROD
-        default: PREPROD
-        required: true
-        description: Choose environment where test will run
 jobs:
   build:
     steps:
